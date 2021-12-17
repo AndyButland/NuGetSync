@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NuGetSync.Service
 {
-    internal static class NuGetPackageSearchResultExtensions
+    internal static class PackageSearchMetadataCollectionExtensions
     {
         internal static IEnumerable<IPackageSearchMetadata> FilterByTag(
             this IEnumerable<IPackageSearchMetadata> searchResults,
