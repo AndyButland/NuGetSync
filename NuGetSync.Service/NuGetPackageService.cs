@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json.Linq;
-using NuGet.Packaging.Core;
 using NuGet.Protocol.Core.Types;
 using NuGet.Versioning;
 using NuGetSync.Core;
@@ -136,8 +135,12 @@ namespace NuGetSync.Service
             new Package
             {
                 Id = packageMetadata.Identity.Id,
-                Description = packageMetadata.Description,
                 Authors = packageMetadata.Authors,
+                Description = packageMetadata.Description,
+                DownloadCount = packageMetadata.DownloadCount,
+                LicenseUrl = packageMetadata.LicenseUrl,
+                ProjectUrl = packageMetadata.ProjectUrl,
+                Summary = packageMetadata.Summary,
                 Tags = packageMetadata.Tags,
             };
     }
